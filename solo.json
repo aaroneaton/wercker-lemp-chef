@@ -1,0 +1,22 @@
+{
+    apt: {
+        mirror: "us-east-1.ec2"
+    },
+    run_list: [
+        "recipe[build-essential]",
+        "recipe[apt]",
+        "recipe[bluepill]",
+        "recipe[ohai]",
+        "recipe[runit]",
+        "recipe[yup-epel]",
+        "recipe[nginx]",
+        "recipe[php5-fpm]",
+        "recipe[yum-mysql-community]",
+        "recipe[mysql]",
+        "recipe[ark]",
+        "recipe[nodejs]",
+        "recipe[python]",
+        "recipe[runit]",
+        "recipe[mongodb]"
+    ]
+}

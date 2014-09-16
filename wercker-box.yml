@@ -1,0 +1,16 @@
+name: wercker-lemp-chef
+version: 0.0.1
+inherits: wercker/box-ubuntu12.04-ruby1.9.3-berkshelf1
+type: main
+platform: ubuntu@12.04
+description: A proper LEMP stack built with Chef. Includes other goodies.
+keywords:
+  - Nginx
+  - PHP5-FPM
+  - MongoDB
+  - Gulp
+  - Bower
+packages:
+  - mongodb
+script: |
+  sudo chef-solo -c $WERCKER_SOURCE_DIR/solo.rb -j $WERCKER_SOURCE_DIR/solo.json -l debug

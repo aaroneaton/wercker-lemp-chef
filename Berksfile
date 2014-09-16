@@ -1,0 +1,17 @@
+site :opscode
+
+cookbook 'build-essential', '~> 2.0'
+cookbook 'apt', '~> 2.2'
+cookbook 'bluepill', '~> 2.3'
+cookbook 'ohai', '~> 2.0'
+cookbook 'runit', '~> 1.2'
+cookbook 'yum-epel', '~> 0.3'
+cookbook 'nginx', '~> 2.7.4'
+cookbook 'php5-fpm', '~> 0.2.2'
+cookbook 'yum-mysql-community', '>= 0.0.0'
+cookbook 'mysql', '~> 5.5.2'
+cookbook 'ark', '>= 0.0.0'
+cookbook 'nodejs', '~> 2.1.0'
+cookbook 'python', '>= 0.0.0'
+cookbook 'runit', '>=1.5.0'
+cookbook 'mongodb', '~> 0.16.1'

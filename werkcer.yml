@@ -1,0 +1,8 @@
+box : channeleaton/wercker-lemp-chef
+build :
+  steps :
+    - script:
+      name : install cookbooks
+      code : |
+        cd $WERCKER_ROOT
+        berks install -p cookbooks
