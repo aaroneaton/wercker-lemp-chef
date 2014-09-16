@@ -5,11 +5,11 @@ type: main
 platform: ubuntu@12.04
 description: A proper LEMP stack built with Chef. Includes other goodies.
 keywords:
-  - Nginx
-  - PHP5-FPM
-  - MongoDB
-  - Gulp
-  - Bower
+  - nginx
+  - php5-fpm
+  - mongodb
+  - gulp
+  - bower
 packages:
   - mongodb
 script: |
