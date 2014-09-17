@@ -1,6 +1,6 @@
 name: wercker-lemp-chef
 version: 0.0.1
-inherits: wercker/box-ubuntu12.04-ruby1.9.3-berkshelf1@0.0.4
+inherits: wercker/ubuntu12.04-ruby1.9.3-berkshelf1@0.0.4
 type: main
 platform: ubuntu@12.04
 description: A proper LEMP stack built with Chef. Includes other goodies.
