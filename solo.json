@@ -1,8 +1,8 @@
 {
-    apt: {
-        mirror: "us-east-1.ec2"
+    "apt": {
+        "mirror": "us-east-1.ec2"
     },
-    run_list: [
+    "run_list": [
         "recipe[build-essential]",
         "recipe[apt]",
         "recipe[bluepill]",
