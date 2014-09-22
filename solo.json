@@ -8,7 +8,7 @@
         "recipe[bluepill]",
         "recipe[ohai]",
         "recipe[runit]",
-        "recipe[yup-epel]",
+        "recipe[yum-epel]",
         "recipe[nginx]",
         "recipe[php5-fpm]",
         "recipe[yum-mysql-community]",
