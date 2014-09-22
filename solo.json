@@ -8,7 +8,6 @@
         "recipe[bluepill]",
         "recipe[ohai]",
         "recipe[runit]",
-        "recipe[yum-epel]",
         "recipe[nginx]",
         "recipe[php5-fpm]",
         "recipe[ark]",
