@@ -11,8 +11,6 @@
         "recipe[yum-epel]",
         "recipe[nginx]",
         "recipe[php5-fpm]",
-        "recipe[yum-mysql-community]",
-        "recipe[mysql]",
         "recipe[ark]",
         "recipe[nodejs]",
         "recipe[python]",
