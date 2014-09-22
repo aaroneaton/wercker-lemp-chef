@@ -1,5 +1,6 @@
 name: wercker-lemp-chef
 version: 0.0.1
+inherits: tvaughan/ubuntu14.04@1.0.2
 type: main
 platform: ubuntu@12.04
 description: A proper LEMP stack built with Chef. Includes other goodies.
@@ -12,10 +13,11 @@ keywords:
 packages:
   - mongodb
 script: |
-  sudo apt-get update && sudo apt-get install python-software-properties
-  sudo apt-add-repository -y ppa:brightbox/ruby-ng
   sudo apt-get update
-  sudo apt-get install -y ruby2.1 curl git build-essential ruby2.1-dev
-  sudo gem install chef --no-ri --no-rdoc
-  sudo gem install berkshelf --no-ri --no-rdoc
+  sudo apt-get install -y wget ruby
+  export CHEF_DEB=chefdk_0.2.1-1_amd64.deb
+  wget --no-check-certificate https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/$CHEF_DEB
+  sudo dpkg -i $CHEF_DEB
+  chef -v
+  rm $CHEF_DEB
   sudo chef-solo -c $WERCKER_SOURCE_DIR/solo.rb -j $WERCKER_SOURCE_DIR/solo.json -l debug
