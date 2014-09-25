@@ -6,3 +6,6 @@ build :
         code : |
           cd $WERCKER_ROOT
           berks install -p cookbooks
+          sudo gem install sass
+          sudo npm install -g gulp
+          sudo npm install -g bower
